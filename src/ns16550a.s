@@ -19,7 +19,7 @@ uart_init:
 
     # 0x1 -> enable FIFOs
     li  t1, 0x1
-    sb  t1, LINE_CONTROL_REGISTER(t0)
+    sb  t1, FIFO_CONTROL_REGISTER(t0)
 
     # 0x1 -> enable reciever interrupts
     sb  t1, INTERRUPT_ENABLE_REGISTER(t0)
